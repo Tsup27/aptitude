@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aptitude: Coding and Decoding</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+    <h1>
+        <a href="./index.html">
+            <i class="fa fa-home icon"></i>
+        </a>
+        Aptitude: Coding and Decoding
+    </h1>
+    <form>
+        <div class="form-element">
+            <table class="tbl">
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                    <th>F</th>
+                    <th>G</th>
+                    <th>H</th>
+                    <th>I</th>
+                    <th>J</th>
+                    <th>K</th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>N</th>
+                    <th>O</th>
+                    <th>P</th>
+                    <th>Q</th>
+                    <th>R</th>
+                    <th>S</th>
+                    <th>T</th>
+                    <th>U</th>
+                    <th>V</th>
+                    <th>W</th>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>Z</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-element">
+            <p>Q.1. If ROSE is coded as 6821, CHAIR is coded as 73456 and PREACH is coded as 961473, what will be the
+                code for SEARCH ?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">246173 </label><br>
+            <input type="radio" id="op2" name="B" value="true">
+            <label for="op2">214673</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">214763 </label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">216473</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>214673<br><br>
+                <strong>Explanation: </strong><br><br><br>
+                The alphabets are coded as shown :
+                <br>
+                R O S E C H A I P <br>
+                6 8 2 1 7 3 4 5 9
+                <br><br>
+                So, in SEARCH,
+                <br><br>
+                S ia coded as 2,<br>
+                E as 1,<br>
+                A as 4,<br>
+                R as 6,<br>
+                C as 7,<br>
+                H as 3.<br>
+                Thus, the code for SEARCH is 214673
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.2.In a certain code language,<br>
+                '134' means 'good and tasty';<br>
+                '478' means 'see good pictures' and <br>
+                '729' means 'pictures are faint'. <br><br>
+
+                Which of the following digits stands for 'see'? </p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">9</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">2</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">1</label><br>
+            <input type="radio" id="op4" name="D" value="true">
+            <label for="op4">8</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>8<br><br>
+                <strong>Explanation: </strong><br><br>
+                In the first and second statements, the common code digit is '4' and the common word is 'good'.
+                <br><br>
+                So, '4' stands for 'good'. <br>
+                In the second and third statements, the common code digit is '7' and the common word is 'pictures'. <br>
+                So, '7' means 'pictures'. <br>
+                Thus, in the second statements, '8' means 'see'.
+
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.3. In a certain code, MONKEY is written as XDJMNL. How is TIGER written in that code ?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">SHFDQ</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">HFDSQ</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">RSAFD</label><br>
+            <input type="radio" id="op4" name="D" value="true">
+            <label for="op4">QDFHS</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>QDFHS<br><br>
+                <strong>Explanation: </strong><br><br>
+                The letter of the word are written in a reverse order and then each letter is moved one step backward to
+                obtain the code.
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.4. If Z = 52 and ACT = 48, then BAT will be equal to</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">39</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">41</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">44</label><br>
+            <input type="radio" id="op4" name="D" value="true">
+            <label for="op4">46</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>46<br><br>
+                <strong>Explanation: </strong><br><br>
+                In the given code, A = 2, B = 4, C = 6,.... , Z = 52. <br>
+                So, ACT = 2 + 6 + 40 = 48 and <br>
+                BAT = 4 + 2 + 40 = 46.
+
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.5. In a certain code language,
+                (A) ‘pit na som’ means ‘bring me water’
+                <br>
+                (B) ‘na jo tod’ means ‘water is life’
+                <br>
+                (C) ‘tub od pit’ means 'give me toy’
+                <br>
+                (D) ‘jo lin kot’ means ‘life and death’
+                <br><br>
+                Which of the following represents 'is' in that language ?
+            </p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">jo </label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">na</label><br>
+            <input type="radio" id="op3" name="C" value="true">
+            <label for="op3">tod</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">lin</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>tod<br><br>
+                <strong>Explanation: </strong><br><br>
+                In statements A and B, the common code word is 'na' and the common word is 'water'.
+                <br>
+                So, 'na' means 'water'.
+                <br>
+                In statements B and D, the common code word is 'jo' and the common word is 'life'. <br>
+                So, 'jo' means 'life'.<br>
+                Thus, in statements B, 'tod' represents 'is'.
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.6. If air is called green , green is called blue, blue is called sky, sky is called yellow, yellow is
+                called water and water is called pink, then what is the color of clear sky ?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Blue</label><br>
+            <input type="radio" id="op2" name="B" value="true">
+            <label for="op2">Sky</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Yellow</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Water</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>Sky<br><br>
+                <strong>Explanation: </strong><br><br>
+                The colour of clear sky is 'blue' and as given, 'blue' is called 'sky'.
+                <br>
+                So, the colour of clear sky is 'sky'.
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.7. If in a code language, COULD is written as BNTKC and MARGIN is written as LZQFHM, how will MOULDING
+                be written in that code ?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">CHMFINTK</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">LNKTCHMF</label><br>
+            <input type="radio" id="op3" name="C" value="true">
+            <label for="op3">LNTKCHMF</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">NITKHCMF</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>NITKHCMF<br><br>
+                <strong>Explanation: </strong><br><br>
+                Each letter in the word is moved one step backward to obtain the corresponding letter of the code.
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.8. <br>
+                (A) '134' means 'you are well';
+                <br>
+                (B) '758' means 'they go home';
+                <br>
+                (C) '839' means 'we are home';
+                <br><br>
+                Which of the statements can be dispensed with while answering the above question?
+            </p>
+            <input type="radio" id="op1" name="A" value="true">
+            <label for="op1">A only</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">B only</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">A or C only</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">B or C only</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>A only<br><br>
+                <strong>Explanation: </strong><br><br>
+                We can find the code for 'home' from the second and third statements.
+                <br><br>
+                For finding the code for 'they', we need the code for 'go' which cannot be determined from the given
+                data. <br>
+                Clearly, statement A is not necessary.
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.9. Acording to a military code, SYSTEM is SYSMET and NEARER is AENRER. What is the code for FRACTION ?
+            </p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">CARFTINO</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">CAFRTION</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">ARFCNOIT</label><br>
+            <input type="radio" id="op4" name="D" value="true">
+            <label for="op4">ARFCNOIT</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>ARFCNOIT<br><br>
+                <strong>Explanation: </strong><br><br>
+                The letter is the first half and the letter half of the word are separately reversed to obtain the code.
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.10. If E = 5 and READ is coded as 7, then what is the code of 'DEAR' ?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">6</label><br>
+            <input type="radio" id="op2" name="B" value="true">
+            <label for="op2">7</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">8</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">9</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>7<br><br>
+                <strong>Explanation: </strong><br><br>
+                Here E = 5 = 5/1 = 5 <br>
+                => READ = 18 + 5 + 1 + 4 = 28/4 = 7 <br>
+                => DEAR = 4 + 5 + 1 + 18 = 28/4 = 7
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.11. If train is called bus, bus is called tractor, tractor is called car, car is called scooter,
+                scooter is called bicycle, bicycle is called moped, which is used to plough a field ?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Train</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">Bus</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Tractor</label><br>
+            <input type="radio" id="op4" name="D" value="true">
+            <label for="op4">Car</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>Car<br><br>
+                <strong>Explanation: </strong><br><br>
+                A 'tractor' is used to plough a field.<br>
+                But a 'tractor' is called 'car'.<br>
+                So, a 'car' will be used to plough the field.
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.12. <br>
+                (A) If Pour is wrtten as 4156 <br>
+                (B) Sware is written as 78269 <br>
+                (C) Clear is written as 3@926 <br>
+                <br><br>
+                Then what is the code for PEARL= ?
+            </p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">429@6</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">4962@</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">4692@</label><br>
+            <input type="radio" id="op4" name="D" value="true">
+            <label for="op4">4926@</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>4926@<br><br>
+                <strong>Explanation: </strong><br><br>
+                Pour - 4156 => P = 4, r = 6 <br>
+                Sware - 78269 => a = 2, e = 9 <br>
+                Clear - 3@926 => l = @ <br>
+                => Pearl = 4926@
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.13. In a certain coding language, iF GO = 32 & SHE = 49 then SOME will be equal to ?</p>
+            <input type="radio" id="op1" name="A" value="true">
+            <label for="op1">56</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">58</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">62</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">64</label>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>56<br><br>
+                <strong>Explanation: </strong><br><br>
+                If we count letters till the end of the alphabet including that letter in reverse order then <br>
+                Here the values are nothing but the values corresponding to the alphabets when taken in a reverse
+                order,i.e,A=26 ,B=25...,Z=1 <br>
+                G = 20 and O = 12 totaling 32 <br>
+                S = 8, H = 19 and E = 22 totaling 49
+                <br><br>
+                So, SOME = 8 + 12 + 14 + 22 = 56.
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.14. If 'L' stands for '+' , 'M' stands for '-' , N stands for 'x' , P stands for '÷' then
+                <br><br>
+                14 N 10 L 42 P 2 M 8 = ?
+            </p>
+            <input type="radio" id="op1" name="A" value="true">
+            <label for="op1">153</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">216</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">248</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">251</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>153<br><br>
+                <strong>Explanation: </strong><br><br>
+                14 x 10 + 42 ÷ 2 - 8 = 153
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.15. If HAT is coded as 'jcv' then what will GUN be coded as?</p>
+            <input type="radio" id="op1" name="A" value="true">
+            <label for="op1">iwp</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">IKM</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">kip</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Klp</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>iwp<br><br>
+                <strong>Explanation: </strong><br><br>
+                Here HAT is coded as jcv <br>
+                => Leaving a letter in between i.e, after H leave i write j in small letters<br>
+                In the same way, A => c, T => v<br>
+                Similarly for GUN => iwp
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.16. In a certain code, '247' means 'spread red carpet' ; '256' means 'dust one carpet' and '234' means
+                'one red carpet'. Which digit in that code means 'dust' ?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">2</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">3</label><br>
+            <input type="radio" id="op3" name="C" value="true">
+            <label for="op3">5</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">6</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>5<br><br>
+                <strong>Explanation: </strong><br><br>
+                In the first and second statements, the common code digit is '2' and the common word is 'carpet'. <br>
+                So, '2' means 'carpet'. <br>
+                In the second and third statements, the common code digit is '6' and the common word is 'one'. <br>
+                So, '6' means 'one'. <br>
+                Therefore, in the second statement, '5' means 'dust'.
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.17. If in a certan language FASHION is coded as FOIHSAN, how is PROBLEM codedin that code?</p>
+            <input type="radio" id="op1" name="A" value="true">
+            <label for="op1">PELBORM</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">PRBOELM</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">RPBOELM</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">RPBOELM</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>PELBORM<br><br>
+                <strong>Explanation: </strong><br><br>
+                The first and the last letters of the word remain as such and the remaining letters are written in a
+                reverse order, to obtain the code.
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.18. Happiness is to 517768399 as senipah is to</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">9836715</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">9386615</label><br>
+            <input type="radio" id="op3" name="C" value="true">
+            <label for="op3">9386715</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">9386715</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>9386715<br><br>
+                <strong>Explanation: </strong><br><br>
+                If each consecutive letter in "happiness" relates to the consecutive numbers in 517768399, then H=5,
+                A=1, P=7, I=6, N=8, E=3 and S=9. <br>
+                Using the numbers that relate to the letters in 'senipah', you will arrive at <br>
+                SENIPAH = 9386715. <br>
+                Hence, Happiness is to 517768399 as senipah is to 9386715.
+
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.19. FRIEND : FPIBNZ :: PATRON : ?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">PTYOPI</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">PYTOPJ</label><br>
+            <input type="radio" id="op3" name="C" value="true">
+            <label for="op3">PYTOOJ</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">PYTPOJ</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>PYTOOJ<br><br>
+                <strong>Explanation: </strong><br><br>
+                FRIEND : FPIBNZ <br>
+                Follows a pattern that,<br>
+                F - F<br>
+                R- second letter to left of R i.e, P<br>
+                I - I<br>
+                E - Third letter to left of E i.e, B<br>
+                N - N<br>
+                D - Fourth letter to left of D i.e, Z
+                <br><br>
+                Similarly, for PATRON <br>
+                P - P<br>
+                A - second letter to left of A i.e, Y<br>
+                T - T<br>
+                R - Third letter to left of R i.e, O<br>
+                O - O<br>
+                N - Fourth letter to left of N i.e, J<br>
+                <br><br>
+                PATRON : PYTOOJ
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.20. In a certain encryption pattern, HARD is coded as 1357 and SOFT is coded as 2468, What will 21448
+                stand for ?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">SHAFT</label><br>
+            <input type="radio" id="op2" name="B" value="true">
+            <label for="op2">SHOOT</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">RAFTS</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">ROOTS</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                <strong>Answer: </strong>SHOOT<br><br>
+                <strong>Explanation: </strong><br><br>
+                AS HARD is coded as "1357" and SOFT is coded as "2468" <br>
+                So H is coded as 1, A as 3, R as 5, D as 7 <br>
+                and S as 2, O as 4, F as 6, T as 8 <br>
+                <br><br>
+                Now in 21448, go number by number <br>
+                2 is the code for S <br>
+                1 is the code for H <br>
+                4 is the code for O <br>
+                and <br>
+                8 is the code for T <br>
+                <br><br>
+                hence, 21448 will stand for SHOOT.
+            </p>
+        </div>
+
+        <div class="form-element">
+            <a href="index.html">Go Back to Homepage</a>
+        </div>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

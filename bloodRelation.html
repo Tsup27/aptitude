@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aptitude: Blood Relations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+    <h1>
+        <a href="./index.html">
+            <i class="fa fa-home icon"></i>
+        </a>
+        Aptitude: Blood Relations
+    </h1>
+    <form>
+        <div class="form-element">
+            <p>Q.1. A is daughter of B. B is a mother of C. D is brother of C. What is the relation of D with A ?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Father</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">Grandfather</label><br>
+            <input type="radio" id="op3" name="C" value="true">
+            <label for="op3">Brother</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Son</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Brother
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.2. X is a sister of Y & Y is a brother of Z. Z is a husband of P & O is a father of Y. How P is related
+                to O? </p>
+            <input type="radio" id="op1" name="A" value="true">
+            <label for="op1">Daughter-in-law</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">Sister</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Uncle </label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Daughter</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Daughter-in-law
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.3.A woman introduced a man & told: "His mother is the only daughter of my father".How that man is man
+                is related to the woman?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Brother</label><br>
+            <input type="radio" id="op2" name="B" value="true">
+            <label for="op2">Son</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Father</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Uncle </label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Son
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.4. Anjali says: "He is the only son of the father of my sister's brother".How that person is related to
+                Anjali?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Uncle </label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">Sister</label><br>
+            <input type="radio" id="op3" name="C" value="true">
+            <label for="op3">Brother </label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Father </label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Brother
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.5. P is son of Q, while Q & R are sister of each other. T is R's mother. If S is T's son, then, which
+                of the following statement is true?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">T is Q's brother</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">S is P's cousin.</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Q & S are sisters.</label><br>
+            <input type="radio" id="op4" name="D" value="true">
+            <label for="op4">S is P's uncle</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: S is P's uncle
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.6. Arun is Rohit's father. Rohit is Mala's brother. Mala is Dilip's wife. What is the relation of Dilip
+                with Rohit?
+            </p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Father</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">Uncle </label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Son </label><br>
+            <input type="radio" id="op4" name="D" value="true">
+            <label for="op4">Brother-in-law</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Brother-in-law
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.7. A man shows a photo & says: "The woman in the photo is the grandmother of my nephew (bhanja) & her
+                son is the brother-in-law (devar/jeth) of my sister". If he has no other sister, then what is the
+                relation of the woman in photo with the sister of that man?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Mother</label><br>
+            <input type="radio" id="op2" name="B" value="true">
+            <label for="op2">Mother-in-law</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Cousin</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">None</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Mother-in-law
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.8. Sonu told Monu: "The person playing the cricket is the husband of the only daughter of the son of my
+                grandfather's son". Who is that person to Sonu? </p>
+            <input type="radio" id="op1" name="A" value="true">
+            <label for="op1">Daughter-in-law</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">Sister</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Uncle </label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Daughter</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Daughter-in-law
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.9. A is daughter of B. B is a mother of C. D is brother of C. What is the relation of D with A ?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Brother-in-law (sala)</label><br>
+            <input type="radio" id="op2" name="B" value="true">
+            <label for="op2">Brother-in-law (Behnoi)</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Brother</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Nephew </label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Brother-in-law (Behnoi)
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.10. Akka showed a picture to Kakka & said that she is the only daughter of the only son of the
+                father-in-law of the mother of your father's daughter. What is the relation of Kakka with that picture?
+            </p>
+            <input type="radio" id="op1" name="A" value="true">
+            <label for="op1">Brother</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">Sister</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Daughter </label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">None</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Brother
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>For Q.11 - Q.12 <br>
+                "PxQ" means P is Q's wife.<br>
+
+                "P+Q" means P is Q's son.<br>
+
+                "P/Q" means P is Q's mother.<br>
+
+                "P-Q" means P is Q's sister.
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.11. What is the relation of M with B in "B/H+M"?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Wife</label><br>
+            <input type="radio" id="op2" name="B" value="true">
+            <label for="op2">Husband</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Sister</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Mother</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Husband
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.12. What of the following expression shown that T is a son-in-law of H? </p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">H-L÷T</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">H×F+L÷T</label><br>
+            <input type="radio" id="op3" name="C" value="true">
+            <label for="op3">H÷R×T </label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">H÷R+T</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: H÷R×T
+            </p>
+        </div>
+        <div class="form-element">
+            <p>Q.13. Pointing to a boy Veena said, "He is the son of only son of my grandfather". How is that boy
+                related to veena? </p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Uncle</label><br>
+            <input type="radio" id="op2" name="B" value="true">
+            <label for="op2">Brother</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Cousin</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Data inadequate</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Brother
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.14. Pointing to a man in a photograph a woman says. He is the father-in-law of the wife of only
+                paternal grandson of my own father-in-law. How is woman related to man</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">son</label><br>
+            <input type="radio" id="op2" name="B" value="true">
+            <label for="op2">Wife</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">cousin </label><br>
+            <input type="radio" id="op3" name="D" value="false">
+            <label for="op4">nephew</label><br>
+            <input type="radio" id="op5" name="E" value="false">
+            <label for="op5">Data inadequate</label><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Wife
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.15. Introducing A man, a woman said. He is the only son of my mother's mother. How is the woman related
+                to the man?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Mother</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">Aunt</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Cousin</label><br>
+            <input type="radio" id="op4" name="D" value="true">
+            <label for="op4">Niece</label><br>
+            <input type="radio" id="op5" name="E" value="false">
+            <label for="op5">Data inadequate</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Niece
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.16. Pointing to a woman in a photograph a man says she is the mother-in-law of the wife of the father
+                of my only son. How is the woman related to man? </p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Daughter</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">Wife</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Daughter-in- law </label><br>
+            <input type="radio" id="op4" name="D" value="true">
+            <label for="op4">Mother</label><br>
+            <input type="radio" id="op5" name="E" value="false">
+            <label for="op5">Data inadequate</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Mother
+            </p>
+        </div>
+        <div class="form-element">
+            <p>Q.17. Pointing towards Rita, Sushant said I am the only son of her mother's son. How is Rita related to
+                Sushant?</p>
+            <input type="radio" id="op1" name="A" value="true">
+            <label for="op1">Aunt</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">Niece</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Mother</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Cousin</label><br>
+            <input type="radio" id="op5" name="E" value="false">
+            <label for="op4">Data inadequate</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Aunt
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.18. Pointing to a girl in a photograph, Sunita said, "She is the mother of Renu, whose father is my
+                son". How is she(Sunita) related to that girl? </p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Mother</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">Aunt</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Cousin </label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Daughter</label><br>
+            <input type="radio" id="op5" name="E" value="true">
+            <label for="op4">None of these</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: None of these
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.19. Sunil is the son of the Kesav. Simran is Kesav's sister, has a son Maruti and daughter Sita. Prem
+                is the maternal uncle of Maruti. How is Sunil related to Maruti?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Nephew</label><br>
+            <input type="radio" id="op2" name="B" value="true">
+            <label for="op2">Cousin</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Uncle</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Brother</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Cousin
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.20. Pointing to a woman in a photograph a man says " she is the only daughter of my wife's mother - in
+                - laws" How is the woman related to the man? </p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Daughter</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">Wife</label><br>
+            <input type="radio" id="op3" name="C" value="true">
+            <label for="op3">Sister </label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Sister - in - law</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Sister
+            </p>
+        </div>
+        <div class="form-element">
+            <p>Q.21. M is the son of P. Q is the granddaughter of O who is the husband of P. How is M related to O? </p>
+            <input type="radio" id="op1" name="A" value="true">
+            <label for="op1">Son</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">Grandson</label><br>
+            <input type="radio" id="op3" name="C" value="false">
+            <label for="op3">Father</label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Uncle</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Son
+            </p>
+        </div>
+
+        <div class="form-element">
+            <p>Q.22. A is the father of B, C is the daughter of B, D is the brother of B, E is the son of A. What is the
+                relationship between C and E?</p>
+            <input type="radio" id="op1" name="A" value="false">
+            <label for="op1">Brother and Sister</label><br>
+            <input type="radio" id="op2" name="B" value="false">
+            <label for="op2">Cousins</label><br>
+            <input type="radio" id="op3" name="C" value="true">
+            <label for="op3">Niece and uncle </label><br>
+            <input type="radio" id="op4" name="D" value="false">
+            <label for="op4">Uncle and aunt</label><br><br>
+            <input type="button" onclick="checkAnswer(event)" value="Answer">
+            <p class="hidden explanation">
+                Answer: Niece and uncle
+            </p>
+        </div>
+
+        <div class="form-element">
+            <a href="index.html">Go Back to Homepage</a>
+        </div>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

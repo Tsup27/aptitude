@@ -1,0 +1,103 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 30px;
+    background-color: rgb(194, 72, 72);
+    color: #fff;
+    text-align: center;
+}
+
+h1 a {
+    color: white;
+    float: left;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+figure {
+    height: 400px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.imgsize{
+    width: 100%;
+    height: auto;
+}
+
+
+.correct {
+    background-color: rgb(32, 212, 32);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.wrong {
+    background-color: rgb(194, 65, 65);
+    color: #fff;
+    border-radius: 5px;
+}
+
+form {
+    margin: 20px;
+}
+.form-element{
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+    min-width: 500px;
+    max-width: 700px;
+}
+
+table{
+    display: flex!important;
+    justify-content: center!important;
+ }
+ 
+
+.form-element label{
+    display: inline-block;
+    padding: 5px;
+    min-width: 200px;
+}
+
+.hidden {
+  
+    display: none;
+}
+.explanation {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.form-element input[type='button'] {
+    color: #fff;
+    border:none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(69, 100, 158);
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.form-element input[type='button']:hover{
+    background-color: rgb(80, 118, 189);
+}
+
+.form-element a{
+    display: block;
+    margin: auto;
+}
